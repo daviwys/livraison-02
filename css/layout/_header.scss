@@ -1,0 +1,35 @@
+// All pages
+.header-top {
+	grid-area: 1 / 1 / 2 / 3;
+	display: grid;
+	grid-template: 1fr / 2fr;
+	padding: 15px;
+}
+
+.header-top__link {
+	grid-area: 1 / 1 / 2 / 2;
+	align-self: start;	
+}
+
+.header-top__nav {
+	grid-area: 1 / 2 / 2 / 3;
+	justify-self: end;	
+
+	font-size: $font-size__link;
+}
+
+.header-top__menu {
+	grid-area: 1 / 2 / 2 / 3;
+}
+
+@media screen and (max-width: 577px) {
+	.header-top__nav {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 577px) {
+	.header-top__menu {
+		display: none;
+	}
+}

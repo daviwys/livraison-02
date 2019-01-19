@@ -1,0 +1,20 @@
+// LIENS
+@mixin link() {
+	text-decoration: none;
+	font-weight: bold;
+
+	&:hover {
+		color: #0f0;
+	}
+}
+.link-menu {
+	color: #fff;
+	@include link();
+}
+
+.link-footer {
+	font-size: $font-size__link;
+	color: #777;
+
+	@include link();
+}

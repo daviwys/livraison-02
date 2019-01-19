@@ -1,0 +1,15 @@
+.presentation {
+	font-size: $font-size;
+	line-height: 2;
+	letter-spacing: 3px;
+	
+	padding: 10px;
+		
+	grid-area: 3 / 1 / 4 / 3;
+	justify-self: center;
+	align-self: center;
+}
+
+.presentation__paragraph {
+	text-align: center;
+}

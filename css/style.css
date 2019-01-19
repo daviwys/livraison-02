@@ -1,0 +1,144 @@
+html, body {
+  font-family: Verdana, Arial, serif;
+  font-size: 10px;
+  color: #fff;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-image: none;
+  width: 100vw; }
+
+.link-menu {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold; }
+  .link-menu:hover {
+    color: #0f0; }
+
+.link-footer {
+  font-size: 1.8rem;
+  color: #777;
+  text-decoration: none;
+  font-weight: bold; }
+  .link-footer:hover {
+    color: #0f0; }
+
+.top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px; }
+
+.intro-figure {
+  margin: 0; }
+
+.intro__img {
+  width: 100vw; }
+
+.main {
+  display: grid;
+  grid-template: 6 / 2;
+  margin: 0; }
+
+.header-top {
+  grid-area: 1 / 1 / 2 / 3;
+  display: grid;
+  grid-template: 1fr / 2fr;
+  padding: 15px; }
+
+.header-top__link {
+  grid-area: 1 / 1 / 2 / 2;
+  align-self: start; }
+
+.header-top__nav {
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: end;
+  font-size: 1.8rem; }
+
+.header-top__menu {
+  grid-area: 1 / 2 / 2 / 3; }
+
+@media screen and (max-width: 577px) {
+  .header-top__nav {
+    display: none; } }
+@media screen and (min-width: 577px) {
+  .header-top__menu {
+    display: none; } }
+.intro {
+  grid-area: 2 / 1 / 3 / 3; }
+
+.social {
+  grid-area: 5 / 1 / 6 / 3;
+  justify-self: center; }
+
+.footer {
+  grid-area: 6 / 1 / 7 / 3;
+  justify-self: center;
+  align-self: center;
+  height: 100px; }
+
+.presentation {
+  font-size: 1.7rem;
+  line-height: 2;
+  letter-spacing: 3px;
+  padding: 10px;
+  grid-area: 3 / 1 / 4 / 3;
+  justify-self: center;
+  align-self: center; }
+
+.presentation__paragraph {
+  text-align: center; }
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: space-between;
+  width: 100vw; }
+
+.gallery__img {
+  flex: 1 1 auto;
+  max-width: auto;
+  max-height: auto;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 5px; }
+
+/*
+.gallery {
+	display: grid;
+	grid-template: 3 / 3;
+	grid-gap: 10px 10px;
+	justify-items: stretch;
+
+	margin: 0;
+}
+
+.gallery__photor1c1 {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.gallery__photor1c2 {
+	grid-area: 1 / 2 / 2 / 3;
+}
+
+.gallery__photor1c3 {
+	grid-area: 1 /3 / 2 / 4;
+}
+
+.gallery__photor2c1 {
+	grid-area: 2 / 1 / 3 / 2;
+}
+
+.gallery__photor2c2 {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.gallery__photor2c3 {
+	grid-area: 2 / 3 / 3 / 4;
+}*/
+
+/*# sourceMappingURL=style.css.map */
