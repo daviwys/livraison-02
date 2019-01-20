@@ -11,6 +11,23 @@
 	align-self: start;	
 }
 
+.header-top__link-phone {
+	grid-area: 1 / 1 / 2 / 2;
+	align-self: start;	
+}
+
+@media screen and (max-width: 577px) {
+	.header-top__link-phone {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 577px) { 
+	.header-top__link {
+		display: none;	
+	}
+}
+
 .header-top__nav {
 	grid-area: 1 / 2 / 2 / 3;
 	justify-self: end;	

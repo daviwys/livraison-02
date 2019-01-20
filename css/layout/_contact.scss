@@ -1,0 +1,68 @@
+// contact.html
+.contact {
+	grid-area: 2 / 1 / 5 / 3;
+	
+	display: grid;
+	grid-template: 6 / 2;
+
+	margin: 0;
+	padding: 10px;
+}
+
+@mixin label {
+	font-size: 2rem;
+}
+
+.contact__surname {
+	grid-area: 1 / 1 / 2 / 2;
+	@include label;
+}
+
+.contact__surname-input {
+	grid-area: 1 / 2 / 2 / 3; 
+}
+
+.contact__enterprise {
+	grid-area: 2 / 1 /3 / 2;
+	@include label;
+}
+
+.contact__enterprise-input {
+	grid-area: 2 / 2 / 3 / 2;
+}
+
+.contact__phone {
+	grid-area: 3 / 1 / 4 / 2;
+	@include label;
+}
+
+.contact__phone-input {
+	grid-area: 3 / 2 / 4 / 3; 
+}
+
+.contact__mail {
+	grid-area: 4 / 1 / 5 / 2; 
+	@include label;
+}
+
+.contact__mail-input {
+	grid-area: 4 / 2 / 5 / 3; 
+}
+
+.contact__message {
+	grid-area: 5 / 1 / 6 / 3; 
+	@include label;
+}
+
+.contact__btn-reset {
+	grid-area: 6 / 1 / 7 / 2; 
+	@include label;
+	width: 200px; 
+}
+
+.contact__btn-go {
+	grid-area: 6 / 2 / 7 / 2; 
+	@include label;
+
+	width: 200px; 
+}

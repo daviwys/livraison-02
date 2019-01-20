@@ -13,6 +13,7 @@
 
 			<header class="header-top">
 				<figure><a class="header-top__link" href="./index.html" title="Sommaire"><img src="./img/logo.png" alt="logo"></a></figure>
+				<figure><a class="header-top__link-phone" href="./index.html" title="Sommaire"><img src="./img/logo_phone.png" alt="logo"></a></figure>
 				<nav class="header-top__nav">
 					<a class="link-menu" href="./services.html" title="Mes prestations">Prestations</a> &nbsp;&nbsp;&nbsp;&nbsp;
 					<a class="link-menu" href="./contact.html" title="Contact">Contact</a>
@@ -20,7 +21,14 @@
 				<a href="#" class="header-top__menu"><img src="./img/menu.png" alt="menu" /></a>
 			</header>
 
-			
+			<form class="contact" action="#" method="post">
+						<label class="contact__surname" for="surname">Nom : </label> <input class="contact__surname-input" id="surname" type="text" name="surname" autocomplete="on" required="required">
+						<label class="contact__enterprise" for="enterprise">Soci&eacute;t&eacute; : </label> <input class="contact__enterprise-input" id="enterprise" type="text" name="enterprise" autocomplete="on" required="required">
+						<label class="contact__phone" for="phone">Tél. : </label> <input class="contact__phone-input" id="phone" type="text" name="phone" autocomplete="on" required="required">
+						<label class="contact__mail" for="mail">E-mail : </label> <input class="contact__mail-input" id="mail" type="text" name="mail" autocomplete="on" required="required">
+						<textarea class="contact__message" id="message" name="message" placeholder="Votre message ici ..." required="required" rows="5"></textarea>
+						<input class="contact__btn-reset" type="reset" value="Effacer"> <input class="contact__btn-go" type="submit" value="Envoyer">
+			</form>
 
 			<section class="social">
 				<a href="#" title="Facebook"><img src="./img/facebook.png" alt="Facebook"></a>

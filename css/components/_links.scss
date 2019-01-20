@@ -15,6 +15,7 @@
 .link-footer {
 	font-size: $font-size__link;
 	color: #777;
+	align-self: center;
 
 	@include link();
 }
