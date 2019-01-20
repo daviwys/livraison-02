@@ -1,6 +1,11 @@
 // services.html
-.title__page {
+.title-page {
 	grid-area: 2 / 1 / 3 / 3;
+
+	justify-items: center;
+	align-items: center;
+	
+	font-size: $font-size;
 }
 
 .services {
