@@ -3,7 +3,7 @@
 	grid-area: 2 / 1 / 5 / 3;
 	
 	display: grid;
-	grid-template: 6 / 2;
+	grid-template: 6fr / 2fr;
 
 	margin: 0;
 	padding: 10px;
@@ -13,6 +13,11 @@
 	font-size: 2rem;
 }
 
+@mixin input {
+	border: 3px solid #fff;
+	margin: 5px;
+}
+
 .contact__surname {
 	grid-area: 1 / 1 / 2 / 2;
 	@include label;
@@ -20,6 +25,8 @@
 
 .contact__surname-input {
 	grid-area: 1 / 2 / 2 / 3; 
+	@include label;
+	@include input;
 }
 
 .contact__enterprise {
@@ -29,6 +36,8 @@
 
 .contact__enterprise-input {
 	grid-area: 2 / 2 / 3 / 2;
+	@include label;
+	@include input;
 }
 
 .contact__phone {
@@ -38,6 +47,8 @@
 
 .contact__phone-input {
 	grid-area: 3 / 2 / 4 / 3; 
+	@include label;
+	@include input;
 }
 
 .contact__mail {
@@ -47,11 +58,14 @@
 
 .contact__mail-input {
 	grid-area: 4 / 2 / 5 / 3; 
+	@include label;
+	@include input;
 }
 
 .contact__message {
 	grid-area: 5 / 1 / 6 / 3; 
 	@include label;
+	@include input;
 }
 
 .contact__btn-reset {

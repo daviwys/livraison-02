@@ -1,0 +1,36 @@
+// services.html
+.title__page {
+	grid-area: 2 / 1 / 3 / 3;
+}
+
+.services {
+	grid-area: 3 / 1 / 5 / 3;
+	display: grid;
+	grid-template: 3fr / 2fr;
+	justify-items: center;
+	align-items: center;
+}
+
+.service__img1 {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.service__img2 {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.service__img3 {
+	grid-area: 3 / 1 / 4 / 2;
+}
+
+.service__title1 {
+	grid-area: 1 / 2 / 2 / 3;
+}
+
+.service__title2 {
+	grid-area: 2 / 1 / 3 / 2;
+}
+
+.service__title3 {
+	grid-area: 3 / 2 / 4 / 3;
+}
